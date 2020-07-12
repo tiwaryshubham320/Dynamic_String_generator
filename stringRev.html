@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Reversing a string dynamically</title>
+		<script type="text/javascript">
+			function func(){
+				var str1=document.getElementById("inputString").value;
+				var str2="";
+				for(var i=str1.length-1;i>=0;i--){
+					str2+=str1[i];
+					//document.getElementById("reversedString").value=str2;
+				}
+				document.getElementById("reversedString").value=str2;
+			}
+		</script>
+		<style type="text/css">
+			#inputString{
+				width:40%;
+				height:40px;
+				background-color:25D366;
+			}
+			.c1{
+				background-color:3b5999;
+			}
+			#reversedString{
+				width:40%;
+				height:40px;
+				background-color:25D366;
+			}
+		</style>
+	</head>
+	
+	<body style="background-color:cd201f;">
+	<br><br><br><br>
+		<h1 align="center" class="c1"><br>Welcome to reverse string Portal<br><br></h1>
+		<input type="text" id="inputString" name="" placeholder="Enter string to be reversed" onkeyup="func()"></input>
+		<input type="text" id="reversedString" name="" placeholder="Reversed String"></input>
+	</body>
+</html>
